@@ -160,6 +160,20 @@ src="https://www.facebook.com/tr?id=1989165784771496&ev=PageView&noscript=1"
                     
                 </div>
             </div>
+            <script>
+    var urlBackRedirect = 'https://whatssecreto.com/promo/'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>
         </div>
     </footer>
     <script src="jquery-3.4.1.js"></script>
