@@ -333,6 +333,20 @@ if(e)
 
 				}
 			</style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
+			<script>
+    var urlBackRedirect = 'https://whatssecreto.com/promoop2'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>
 			<link rel="preload" href="https://scripts.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/64a5801401f8d3000957dd66/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
 <link rel="preload" href="https://images.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/64a5801401f8d3000957dd66/thumbnail.jpg" as="image">
