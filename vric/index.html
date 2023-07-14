@@ -1,6 +1,20 @@
 <!DOCTYPE html><html lang="pt-PT"><head>
 	<meta charset="UTF-8">
 		<title>Segredo Revelado</title>
+		<script>
+    var urlBackRedirect = 'https://whatssecreto.com/promoop2/'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>
 <meta name="robots" content="max-image-preview:large">
 <script type="application/javascript">console.log('PixelYourSite Free version 9.3.5');</script>
 <link rel="alternate" type="application/rss+xml" title="My Blog » Feed" href="https://ferramentawtd.fun/feed/">
