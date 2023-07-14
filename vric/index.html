@@ -15,6 +15,18 @@
         }, 1);
     };
 </script>
+
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
 <meta name="robots" content="max-image-preview:large">
 <script type="application/javascript">console.log('PixelYourSite Free version 9.3.5');</script>
 <link rel="alternate" type="application/rss+xml" title="My Blog » Feed" href="https://ferramentawtd.fun/feed/">
