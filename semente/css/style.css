@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 74px;
+    background-color: #C4170C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    transition: .3s;
+}
+
+header.fixo{
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.box-titulo{
+    padding: 0 15px 50px;
+    max-width: 888px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.titulo{
+    color: #111111;
+    font-size: 56px;
+    line-height: 1;
+    margin-top: 60px;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+}
+
+.subtitulo{
+    color: #555555;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.autor{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.autor, .data{
+    color: #555555;
+    font-size: 16px;
+}
+
+.autor span{
+    font-weight: normal;
+}
+
+.botao-menu svg{
+    width: 64px;
+    height: 34px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+header .botao-menu{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .botao-menu span{
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+header .botao-menu .burguer{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.burguer::before, .burguer::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    left: 0;
+    background-color: white;
+}
+
+.burguer::before{
+    top: -6px;
+}
+
+.burguer::after{
+    bottom: -6px;
+}
+
+header h2{
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+header .busca{
+    width: 25%;
+}
+
+main{
+    padding: 0 15px;
+}
+
+.box-conteudo{
+    max-width: 648px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.4;
+    padding: 80px 0;
+}
+
+.box-conteudo figure{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+
+.box-conteudo figure img{
+    width: 100%;
+    height: auto;
+}
+
+.box-conteudo figure figcaption{
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.box-conteudo a{
+    color: #c4170c;
+    font-weight: bold;
+}
+
+.box-conteudo a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #a6130a;
+}
+
+footer{
+    padding: 15px;
+    background-color: #c4170c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer svg{
+    width: 32px;
+    height: 32px;
+}
+
+footer span{
+    color: white;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1023px){
+    header .botao-menu span{
+        display: none;
+    }
+
+    header h2{
+        font-size: 24px;
+    }
+
+    .titulo{
+        font-size: 32px;
+    }
+
+    .subtitulo{
+        font-size: 16px;
+    }
+
+    .autor, .data{
+        font-size: 14px;
+    }
+
+    .box-conteudo{
+        font-size: 18px;
+    }
+}
